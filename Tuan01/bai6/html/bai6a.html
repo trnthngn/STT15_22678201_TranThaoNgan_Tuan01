@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <style>
+      .wrapper {
+        height: auto;
+        width: 800px;
+        background-color: #99CDFD;
+        margin: 0 auto;
+        padding: 0;
+        border: 1px solid black;
+      }
+      img {
+        margin-top: 5px;
+      }
+      table {
+        width: 100%;
+        margin: 0 auto;
+      }
+      td {
+        padding: 5px;
+      }
+      hr {
+        border: 0;
+        border-top: 1px solid #000;
+      }
+      button {
+        padding: 5px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <center>
+        <img src="../image/Jackson.jpg" alt="Jackson Electronics" />
+        <h2>Registration Form</h2>
+        <p>Register your Jackson Electronics product here</p>
+        <form name="REG">
+          <table>
+            <tr>
+              <td>First Name:</td>
+              <td colspan="2">
+                <input name="FirstName" size="15" /> Last Name:
+                <input name="LastName" size="15" />
+              </td>
+            </tr>
+            <tr>
+              <td>Address #1:</td>
+              <td colspan="2"><input name="Address1" size="30" /></td>
+            </tr>
+            <tr>
+              <td>Address #2:</td>
+              <td colspan="2"><input name="Address2" size="30" /></td>
+            </tr>
+            <tr>
+              <td>City:</td>
+              <td colspan="2">
+                <input name="City" /> State:
+                <input name="State" size="3" /> Zip:
+                <input name="ZIP" size="8" />
+              </td>
+            </tr>
+            <tr>
+              <td>Country:</td>
+              <td colspan="2"><input name="Country" value="United States" /></td>
+            </tr>
+            <tr>
+              <td colspan="3"><hr /></td>
+            </tr>
+            <tr>
+              <td>Product:</td>
+              <td colspan="2">
+                <select name="Product">
+                  <option>ScanMaster</option>
+                  <option>ScanMaster II</option>
+                  <option>LaserPrint 1000</option>
+                  <option>LaserPrint 5000</option>
+                  <option>Print/Scan 150</option>
+                  <option>Print/Scan 250</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>Date Purchased:</td>
+              <td colspan="2"><input name="Date" /></td>
+            </tr>
+            <tr>
+              <td>Serial #:</td>
+              <td colspan="2"><input name="Serial" /></td>
+            </tr>
+            <tr>
+              <td valign="top">Used for:</td>
+              <td valign="top">
+                <input type="radio" name="USE" value="HOME" />Home<br />
+                <input type="radio" name="USE" value="BUS" checked="CHECKED" />Business<br />
+                <input type="radio" name="USE" value="GOV" />Government
+              </td>
+              <td valign="top">
+                <input type="radio" name="USE" value="ED" />Educational Institution<br />
+                <input type="radio" name="USE" value="OTHER" />Other
+              </td>
+            </tr>
+            <tr>
+              <td valign="top">System (check all that apply):</td>
+              <td valign="top">
+                <input type="checkbox" name="WIN9598NT" />Windows 95/98/NT<br />
+                <input type="checkbox" name="WINDOS" />Windows 3.x/DOS<br />
+                <input type="checkbox" name="MAC" />Macintosh
+              </td>
+              <td valign="top">
+                <input type="checkbox" name="UNIX" />UNIX<br />
+                <input type="checkbox" name="OTHEROS" />Other
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3"><hr /></td>
+            </tr>
+            <tr>
+              <td valign="top">Comments?:</td>
+              <td colspan="2">
+                <textarea rows="5" cols="40"></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td valign="top">
+                <button type="submit">Click to Register</button>
+              </td>
+              <td valign="top">
+                <button type="reset">Click to Cancel</button>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </center>
+    </div>
+  </body>
+</html>
